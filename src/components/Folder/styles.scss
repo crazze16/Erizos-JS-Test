@@ -1,0 +1,22 @@
+.folderWrapper {
+  padding-left: 10px;
+  h3 {
+    position: relative;
+    &:before {
+      left: -10px;
+      position: absolute;
+      content: '';
+      width: 6px;
+      height: 6px;
+      display: block;
+      border-top: 2px solid black;
+      border-right: 2px solid black;
+      transform: rotate(45deg);
+    }
+  }
+  .folder-opened {
+    &:before {
+      transform: rotate(135deg);
+    }
+  }
+}
